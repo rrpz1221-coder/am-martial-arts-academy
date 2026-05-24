@@ -1573,7 +1573,10 @@
   /* --- TABLET ≤1080px --- */
   @media (max-width:1080px){
     /* NAV — desktop links/socials hide; mobile chip row & tightened grid take over */
-    .nav-links,.nav-socials,.nav-cta .ph{display:none}
+    .nav-links,.nav-cta .ph{display:none}
+    .nav-socials{gap:4px}
+    .nav-socials a{width:30px;height:30px}
+    .nav-socials svg{width:14px;height:14px}
     .nav-inner{grid-template-columns:auto 1fr;gap:14px;height:68px}
     .nav-cta{justify-self:end}
     .nav-mobile{
@@ -1724,7 +1727,8 @@
     .nav-cta{gap:10px}
     .nav-cta .ph{display:none}
     .nav-cta .btn{padding:12px 16px;font-size:12px;min-height:42px}
-
+    .nav-socials a[aria-label="Facebook"],
+    .nav-socials a[aria-label="Threads"]{display:none}
     /* WHATSAPP pill */
     .wa{padding:14px;left:16px;bottom:16px;gap:0;min-width:46px;min-height:46px;justify-content:center}
     .wa .lbl{display:none}
